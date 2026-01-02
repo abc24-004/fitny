@@ -77,6 +77,12 @@ main.workout-container {
     display: inline; 
 }
 
+.food-groups ul {
+    list-style-type: disc;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
 .muscle-group-heading {
     font-weight: 700;
     font-size: 1.25rem;
@@ -84,7 +90,11 @@ main.workout-container {
     margin-bottom: 0.5rem;
 }
 
-
+.access-button {
+    text-transform: uppercase;
+    color: darkred;
+    font-style: italic;
+}
 
 .nutrition-hero {
     min-height: 50vh;
@@ -99,6 +109,16 @@ main.workout-container {
 
 #consent {
     margin-bottom: 20px ;
+}
+
+#freeplan {
+    background-image: url(images/white-black-homepage-pic.jpg);
+}
+
+.nutrition-heading-section {
+    font-size: 2.5rem;
+    color: #333;
+    background-image: url(images/nutrition-image.jpg);
 }
 
 ul {
@@ -186,6 +206,15 @@ ul {
 .workout-page-link:hover {
     color: darkred;
     text-decoration: underline;
+}
+
+.access-button-link {
+    color: #000000;
+    text-decoration: none;
+}
+.access-button-link:hover {
+    text-decoration: underline;
+    color:#800000
 }
 
 @media (max-width: 768px) {

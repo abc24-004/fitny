@@ -2,59 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitny | Your Fitness Guide</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fitny | Resources</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="images/black-red-favicon.webp" />
+    <link rel="icon" href="images/black-red-favicon.webp" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato&display=swap"
         rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html"><img title="logo" class="logo-pic" alt="Fitny F logo"
-                        src="images/black-red-favicon.webp">Fitny</a>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/black-red-favicon.webp" alt="Fitny logo" class="logo-pic"> Fitny
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    title="Toggle navigation">
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
+
     <main class="pt-5">
+        <!-- Hero for Resources -->
         <section class="container mt-5 pt-5">
-            <div class="row align-items-center min-vh-75">
-                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                    <h1 class="display-5 fw-bold mb-3">Exercise Mastery</h1>
-                    <p class="text-muted lead mb-4">
-                        Know which exercises to do for each muscle group
-                    </p>
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6 text-lg-start text-center mb-4 mb-lg-0">
+                    <h1 class="display-5 fw-bold mb-3">Exercise Mastery & Nutrition</h1>
+                    <p class="text-muted lead mb-4">Practical exercise lists (with video demos) and simple nutrition
+                        guidance — everything for those who want results without overcomplication</p>
                 </div>
-    
                 <div class="col-lg-6 text-center">
-                    <img src="images/exercise-page.jpg" alt="Squat Ready Image" class="img-fluid rounded shadow-sm" />
+                    <img src="images/exercise-page.jpg" alt="Exercise illustration" class="img-fluid rounded shadow-sm"
+                        loading="lazy" />
                 </div>
             </div>
         </section>
-    </main>
-    <section class="container my-5">
+
+        <!-- Exercises grid (kept concise for readability) -->
+        <section class="container my-5">
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
                 <div class="p-3 border rounded bg-light h-100">
                     <h3 class="muscle-group-heading">Chest</h3>
-                    <img src="images/chest-pic.jpg" alt="Highlighted Chest Diagram" class="img-fluid rounded mb-3" />
+                    <img src="images/chest-pic.jpg" alt="Highlighted Chest Diagram" class="img-fluid rounded mb-3"
+                        loading="lazy" />
                     <ul>
                         <li><a class="exercise-link" href="https://www.youtube.com/watch?v=gRVjAtPip0Y" target="_blank"
                                 rel="noopener">Barbell Bench Press</a></li>
@@ -69,11 +73,12 @@
                     </ul>
                 </div>
             </div>
-    
+        
             <div class="col-md-6 col-lg-4">
                 <div class="p-3 border rounded bg-light h-100">
                     <h3 class="muscle-group-heading">Back</h3>
-                    <img src="images/back-pic.jpg" alt="Highlighted Back Diagram" class="img-fluid rounded mb-3" />
+                    <img src="images/back-pic.jpg" alt="Highlighted Back Diagram" class="img-fluid rounded mb-3"
+                        loading="lazy" />
                     <ul>
                         <li><a class="exercise-link" href="https://www.youtube.com/watch?v=AweC3UaM14o" target="_blank"
                                 rel="noopener">Deadlift</a></li>
@@ -88,11 +93,11 @@
                     </ul>
                 </div>
             </div>
-    
+        
             <div class="col-md-6 col-lg-4">
                 <div class="p-3 border rounded bg-light h-100">
                     <h3 class="muscle-group-heading">Legs</h3>
-                    <img src="images/legs.jpg" alt="Highlighted Legs Diagram" class="img-fluid rounded mb-3" />
+                    <img src="images/legs.jpg" alt="Highlighted Legs Diagram" class="img-fluid rounded mb-3" loading="lazy" />
                     <ul>
                         <li><a class="exercise-link" href="https://www.youtube.com/watch?v=aOzrA4FgnM0" target="_blank"
                                 rel="noopener">Barbell Back Squat</a></li>
@@ -107,11 +112,12 @@
                     </ul>
                 </div>
             </div>
-    
+        
             <div class="col-md-6 col-lg-4">
                 <div class="p-3 border rounded bg-light h-100">
                     <h3 class="muscle-group-heading">Shoulders</h3>
-                    <img src="images/shoulder-pic.jpg" alt="Highlighted Shoulder Diagram" class="img-fluid rounded mb-3" />
+                    <img src="images/shoulder-pic.jpg" alt="Highlighted Shoulder Diagram" class="img-fluid rounded mb-3"
+                        loading="lazy" />
                     <ul>
                         <li><a class="exercise-link" href="https://www.youtube.com/watch?v=B-aVuyhvLHU" target="_blank"
                                 rel="noopener">Dumbbell Shoulder Press</a></li>
@@ -126,12 +132,12 @@
                     </ul>
                 </div>
             </div>
-    
+        
             <div class="col-md-6 col-lg-4">
                 <div class="p-3 border rounded bg-light h-100">
                     <h3 class="muscle-group-heading">Arms</h3>
-                    <img src="images/detailed arms-pic.jpg" alt="Highlighted Arms Diagram"
-                        class=" arms img-fluid rounded mb-3" />
+                    <img src="images/detailed arms-pic.jpg" alt="Highlighted Arms Diagram" class=" arms img-fluid rounded mb-3"
+                        loading="lazy" />
                     <ul>
                         <li><a class="exercise-link" href="https://www.youtube.com/watch?v=ykJmrZ5v0Oo" target="_blank"
                                 rel="noopener">Bicep Curls</a></li>
@@ -146,11 +152,12 @@
                     </ul>
                 </div>
             </div>
-    
+        
             <div class="col-md-6 col-lg-4">
                 <div class="p-3 border rounded bg-light h-100">
                     <h3 class="muscle-group-heading">Core</h3>
-                    <img src="images/detailed-abs-pic.jpg" alt="Highlighted Core Diagram" class="img-fluid rounded mb-3" />
+                    <img src="images/detailed-abs-pic.jpg" alt="Highlighted Core Diagram" class="img-fluid rounded mb-3"
+                        loading="lazy" />
                     <ul>
                         <li><a class="exercise-link" href="https://www.youtube.com/watch?v=pvIjsG5Svck" target="_blank"
                                 rel="noopener">Plank</a></li>
@@ -165,132 +172,201 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Free plan capture (anchor target) -->
+        <section id="freeplan" class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-3">Free 7-Day Workout Plan</h2>
+                        <p class="text-muted mb-3">Instantly download a practical, time-friendly plan — no equipment
+                            required. Enter your email and we’ll send it to you and give you the option to book a free
+                            15-minute consult</p>
 
-    <section class="pt-5">
-        <section class="container mt-5 pt-5">
-            <div class="row align-items-center min-vh-75">
-                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                    <h1 class="display-5 fw-bold mb-3">Free Workout Guide</h1>
-                    <form id="leadForm" action="https://formspree.io/f/xpqzonja" method="POST">
-                        <label for="email">Email: </label>
-                        <input id="email" name="email" type="email" required placeholder="you@example.com">
-                        <div>
-                            <input id="consent" name="consent" type="checkbox" required>
-                            <label for="consent">I agree to receive the free plan</label>
+                        <!-- Formspree form — hidden _next ensures redirect to thank-you.html -->
+                        <form id="leadForm" action="https://formspree.io/f/xpqzonja" method="POST" class="lead-form"
+                            aria-label="Free plan form">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input id="email" name="email" type="email" required class="form-control"
+                                    placeholder="you@university.edu" />
+                            </div>
+
+                            <input type="hidden" name="_next"
+                                value="https://abc24-004.github.io/fitny/thank-you.html" />
+                            <input type="hidden" name="utm_source" id="utm_source" value="" />
+                            <div class="mb-3 form-check">
+                                <input id="consent" name="consent" type="checkbox" required class="form-check-input" />
+                                <label for="consent" class="form-check-label">I agree to receive the free plan and
+                                    occasional coaching emails (privacy policy).</label>
+                            </div>
+
+                            <em><button type="submit" class=" access-button btn btn-outline-dark btn-lg">Access Free Plan</button></em>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+                        <img src="images/white-black-homepage-pic.jpg" alt="Student workout image"
+                            class="img-fluid rounded shadow-sm" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutrition condensed -->
+        <section class="text-center py-5 mt-5 nutrition-hero nutrition-heading-section">
+            <div class="container">
+                <h2 class="fw-bold mb-3 ">Nutrition</h2>
+                <p class="lead text-dark mb-0">This is the foundation of your fitness journey. The building blocks of your exercise and recovery</p>
+            </div>
+        </section>
+    
+        <section class="food-groups">
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="images/protein-pic.jpg" alt="Protein source" class="img-fluid rounded shadow-sm"
+                                loading="lazy" />
                         </div>
-                        <input type="hidden" name="utm_source" id="utm_source">
-                        <a href="downloads/transformation-plan.pdf" download class="btn btn-outline-dark btn-lg">
-                            <i class="bi bi-download me-2"></i> Send Plan
-                        </a>
-                    </form>
-                    
-                    <script>
-                        // populate UTM fields from URL
-                        const params = new URLSearchParams(location.search);
-                        document.getElementById('utm_source').value = params.get('utm_source') || '';
-                    </script>
-    
-                </div>
-    
-                <div class="col-lg-6 text-center">
-                    <img src="images/white-black-homepage-pic.jpg" alt="Dumbbell Homapage Image"
-                        class="img-fluid rounded shadow-sm" />
-                </div>
-            </div>
-        </section>
-    </section>
-    <section class="pt-5">
-        <section class="text-center py-5 mt-5 nutrition-hero">
-            <div class="container">
-                <h1 class="display-5 fw-bold mb-3">Nutrition</h1>
-                <p class="lead text-dark">
-                    Nutrition is the cornerstone of fitness. It fuels your workouts and aids in recovery.<br>
-                    <strong>80% of your results comes from what you eat</strong>, while 20% comes from your workouts.<br>
-                    The 4 main food groups are: Proteins, Carbohydrates, Fats and Vitamins & Minerals.<br>
-                    Each group plays a crucial role in your overall health and fitness
-                </p>
-            </div>
-        </section>
-    
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="images/protein-pic.jpg" alt="Protein source" class="img-fluid rounded shadow-sm" />
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="fw-bold">Proteins</h3>
-                        <p class="text-muted">
-                            Provide the building blocks for building muscle. Essential for muscle repair and growth. Choose
-                            sources like chicken, beef, fish, beans and nuts etc
-                        </p>
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Proteins</h3>
+                            <p class="text-muted">
+                                <ul>
+                                    <li>
+                                        Provide the building blocks for building muscle. Essential for muscle repair and growth.
+                                    </li>
+                                    <li>
+                                        Choose sources like chicken, beef, fish, beans and nuts etc.
+                                    </li>
+                                    <li>
+                                        Protein is crucial for recovery after workouts and supports muscle growth.
+                                    </li>
+                                    <li>
+                                        Including a source of protein in every meal helps to meet daily requirements.
+                                    </li>
+                                    <li>
+                                        Without adequate protein, muscle repair and growth can be compromised, hindering progress.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <section class="py-5">
-            <div class="container">
-                <div class="row align-items-center flex-md-row-reverse">
-                    <div class="col-md-6">
-                        <img src="images/carbs-pic.jpg" alt="Carbohydrates source" class="img-fluid rounded shadow-sm" />
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="fw-bold">Carbohydrates</h3>
-                        <p class="text-muted">
-                            The body's main energy source. These fuel your activity and workouts. Choose sources like whole
-                            grains ie rice, pasta, quinoa, fruits ie apples, oranges, pears and vegetables ie broccoli,
-                            spinach, carrots etc
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="images/fats-pic.jpg" alt="Fats source" class="img-fluid rounded shadow-sm" />
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="fw-bold">Fats</h3>
-                        <p class="text-muted">
-                            Important for normal hormone production and nutrient absorption. Choose healthy fats like
-                            avocados, olive oil, avocado oil etc
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="py-5">
-            <div class="container">
-                <div class="row align-items-center flex-md-row-reverse">
-                    <div class="col-md-6">
-                        <img src="images/vitamins-pic.jpg" alt="Vitamins and Minerals source"
-                            class="img-fluid rounded shadow-sm" />
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="fw-bold">Vitamins & Minerals</h3>
-                        <p class="text-muted">
-                            Vital for various bodily functions. Ensure a colorful diet rich in fruits and vegetables. Choose
-                            sources like spinach, kale, carrots, berries, oranges, bananas etc
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+            </section>
 
+            <section class="py-5">
+                <div class="container">
+                    <div class="row align-items-center flex-md-row-reverse">
+                        <div class="col-md-6">
+                            <img src="images/carbs-pic.jpg" alt="Carbohydrates source" class="img-fluid rounded shadow-sm"
+                                loading="lazy" />
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Carbohydrates</h3>
+                            <p class="text-muted">
+                                <ul class=>
+                                    <li>
+                                        Carbohydrates are the body's main energy source; they fuel your activity and workouts.                                     
+                                    </li>
+                                    <li>
+                                        Choose sources like rice, pasta, quinoa, fruits ie apples, oranges etc.
+                                    </li>
+                                    <li>
+                                        Carbohydrates are the primary energy source for high-intensity exercise.
+                                    </li>
+                                    <li>
+                                        Consuming adequate carbs aids in recovery by replenishing glycogen stores.
+                                    </li>
+                                    <li>
+                                        Generally, carbs should make up a significant portion of your daily caloric intake.
+                                    </li>
+                                </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="images/fats-pic.jpg" alt="Fats source" class="img-fluid rounded shadow-sm" loading="lazy" />
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Fats</h3>
+                            <p class="text-muted">
+                                <ul>
+                                    <li>
+                                        Important for normal hormone production and nutrient absorption.
+                                    </li>
+                                    <li>
+                                        Choose sources like avocados, olive oil, avocado oil etc.
+                                    </li>
+                                    <li>
+                                        Fats play a vital role in hormone production which are important for overall health.
+                                    </li>
+                                    <li>
+                                        They aid in the absorption of essential fat-soluble vitamins.
+                                    </li>
+                                    <li>
+                                        Including healthy fats in your diet supports long-term energy needs.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="row align-items-center flex-md-row-reverse">
+                        <div class="col-md-6">
+                            <img src="images/vitamins-pic.jpg" alt="Vitamins and Minerals source"
+                                class="img-fluid rounded shadow-sm" loading="lazy" />
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Vitamins & Minerals</h3>
+                            <p class="text-muted">
+                                <ul>
+                                    <li>
+                                        Choose sources like spinach, kale, carrots, berries, oranges, bananas etc.
+                                    </li>
+                                    <li>
+                                        A deficiency in certain vitamins or minerals can impair performance and recovery. 
+                                    </li>
+                                    <li>
+                                        This is usually the missing piece in many fitness journeys.
+                                    </li>
+                                    <li>
+                                        Vitamins and minerals support numerous physiological functions, including energy production, immune function, and muscle contraction.
+                                    </li>                                    
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Section>
+    </main>
 
     <footer class="mt-auto bg-white text-center text-muted py-3 border-top">
         <p class="mb-1">&copy; 2025 <a href="index.html" class="fitny-link">Fitny</a>. All rights reserved.</p>
         <a href="contact.html" class="contact-link ">Get in Touch</a>
     </footer>
+
+    <script>
+        // populate UTM field if present in URL
+        (function () {
+            const params = new URLSearchParams(location.search);
+            const source = params.get('utm_source') || '';
+            document.getElementById('utm_source').value = source;
+        })();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
