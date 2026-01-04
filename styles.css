@@ -28,6 +28,12 @@ section.container {
     
 }
 
+.blue-button {
+    background-color: darkred;
+    border-color: darkred;
+    text-align: center ;
+}
+
 .main-nutrition-container {
     background-color: white;
     padding: 3rem 2rem;
@@ -72,12 +78,22 @@ main.workout-container {
     max-width: 100%;
 }
 
+.home-hero {
+    text-align: center;
+    position: relative;
+}
 
 .exercise-list li{
     display: inline; 
 }
 
 .food-groups ul {
+    list-style-type: disc;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.plan-points {
     list-style-type: disc;
     padding-bottom: 2rem;
     text-align: left;
@@ -132,6 +148,20 @@ ul {
 }
 
 .navbar .nav-link:active {
+    color: darkred;
+    text-decoration: underline;
+}
+
+.story-link:visited {
+    color: darkred;
+}
+
+.story-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.story-link:active {
     color: darkred;
     text-decoration: underline;
 }
