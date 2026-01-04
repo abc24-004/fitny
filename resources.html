@@ -184,26 +184,41 @@
                             required. Enter your email and we’ll send it to you and give you the option to book a free
                             15-minute consult</p>
 
-                        <!-- Formspree form — hidden _next ensures redirect to thank-you.html -->
-                        <form id="leadForm" action="https://formspree.io/f/xpqzonja" method="POST" class="lead-form"
-                            aria-label="Free plan form">
+                        <!-- Mailchimp (clean, Bootstrap-friendly) -->
+                        <form
+                            action="https://github.us7.list-manage.com/subscribe/post?u=d5337f778c628bb9db83bfa63&amp;id=be62786a6a&amp;f_id=0040b1e4f0"
+                            method="post" class="mt-4" aria-label="Free workout plan signup">
+
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email address</label>
-                                <input id="email" name="email" type="email" required class="form-control"
-                                    placeholder="you@university.edu" />
+                                <label for="mce-EMAIL" class="form-label">Email address</label>
+                                <input type="email" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="yourname@university.ac.bw"
+                                    required>
                             </div>
 
-                            <input type="hidden" name="_next"
-                                value="https://abc24-004.github.io/fitny/thank-you.html" />
-                            <input type="hidden" name="utm_source" id="utm_source" value="" />
-                            <div class="mb-3 form-check">
-                                <input id="consent" name="consent" type="checkbox" required class="form-check-input" />
-                                <label for="consent" class="form-check-label">I agree to receive the free plan and
-                                    occasional coaching emails (privacy policy).</label>
+                            <!-- Optional: capture UTM if present. Note: Mailchimp will only store this if you create a merge field for it. -->
+                            <input type="hidden" name="UTM_SOURCE" id="utm_source" value="">
+
+                            <!-- Bot protection field (required by Mailchimp embed) -->
+                            <div style="position:absolute; left:-5000px;" aria-hidden="true">
+                                <input type="text" name="b_d5337f778c628bb9db83bfa63_be62786a6a" tabindex="-1" value="">
                             </div>
 
-                            <em><button type="submit" class=" access-button btn btn-outline-dark btn-lg">Access Free Plan</button></em>
+                            <button type="submit" class="btn btn-outline-maroon btn-lg">Access Free Plan</button>
                         </form>
+
+                        <script>
+                            (function () {
+                                try {
+                                    const params = new URLSearchParams(location.search);
+                                    const source = params.get('utm_source') || '';
+                                    const utmEl = document.getElementById('utm_source');
+                                    if (utmEl) utmEl.value = source;
+                                } catch (err) {
+                                    console.warn('UTM script error', err);
+                                }
+                            })();
+                        </script>
+
                     </div>
 
                     <div class="col-lg-6 text-center">
