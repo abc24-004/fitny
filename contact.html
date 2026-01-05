@@ -1,31 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitny Contact page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Fitny</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="images/black-red-favicon.webp" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato&display=swap"
-        rel="stylesheet" />
+    <link rel="icon" href="images/black-red-favicon.webp" />
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+
+    <!-- NAV -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html"><img title="logo" class="logo-pic" alt="Fitny F logo" src="images/black-red-favicon.webp" alt="logo">Fitny</a>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/black-red-favicon.webp" alt="Fitny logo" class="logo-pic"> Fitny
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    title="Toggle navigation">
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
-                        <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nutrition.html">Nutrition</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="my-story.html">Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
                         <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -33,72 +37,119 @@
         </nav>
     </header>
 
-    <main class="pt-5">
-        <section class="container mt-5 pt-5">
-            <div class="row align-items-center min-vh-75">
-                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                    <h1 class="display-5 fw-bold mb-3">Get in Touch</h1>
-                    <p class="text-muted lead mb-4">
-                        We would love to hear from you! Have any questions? Feel free to reach out.<br>
-                        If you’d like 1-1 personalized coaching, reach out directly:
-                    </p>
-                    <ul>
-                        <li>Email: <a class="email-link" href="mailto:kevinruhukya@gmail.com">kevinruhukya@gmail.com</a>
-                        </li>
-                        <li>Phone: <a class="number-link" href="tel:+26777710217">+26777710217</a></li>
-                    </ul>
+    <!-- MAIN -->
+    <main class="pt-5 container mt-5 pt-5">
+        <div class="row g-4">
+            <!-- Left column: Info & quick contact -->
+            <div class="col-lg-5">
+                <h1 class="fw-bold">Get in touch</h1>
+                <p class="text-muted">
+                    I'm here to help, if you're serious about making changes and seeing results let's connect!
+                </p>
+
+                <!-- Primary CTA: Calendly link (opens in new tab) -->
+                <p class="mb-3">
+                    <a href="https://calendly.com/kevinruhukya/15min" class="blue-button btn btn-lg text-white"
+                        target="_blank" rel="noopener">
+                        Book a Free 15-min Call
+                    </a>
+                </p>
+
+                <p class="small text-muted mb-3">
+                    Prefer email or whatsapp? Use the address or number below:
+                </p>
+
+                <div class="mb-3">
+                    <strong>Email</strong><br>
+                    <a class="email-link" href="mailto:kevinruhukya@gmail.com">kevinruhukya@gmail.com</a>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <img src="images/contact-pic.jpg" alt="Coaching" class="img-fluid rounded shadow-sm" />
+
+                <div class="mb-3">
+                    <strong>Phone</strong><br>
+                    <a class="number-link" href="tel:+26777710217">+267 777 10217</a>
                 </div>
+
+                <hr />
+
+                <p class="small text-muted">
+                    Privacy: your contact details are kept private and used only to respond or schedule calls. By
+                    contacting me you agree to be contacted about coaching and related services.
+                </p>
             </div>
-        </section>
 
-        <section class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                        <h2 class="fw-bold mb-4 text-center">Check Out my Social Media</h2>
-                        <p class="text-muted lead mb-4">
-                            https://www.tiktok.com/@kjruhu?is_from_webapp=1&sender_device=pc
-                        </p>
+            <!-- Right column: Calendly embed -->
+            <div class="col-lg-7">
+                <div style="min-width:320px;height:620px;">
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/kevinruhukya/15min"
+                        style="min-width:320px;height:600px;"></div>
                 </div>
-
-        </section>
-
-        <section class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="fw-bold mb-4 text-center">Feedback Form</h2>
-                    <form action="mailto:kevinruhukya@gmail.com" method="post" enctype="text/plain">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required
-                                placeholder="Enter your name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" required
-                                placeholder="Enter your email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required
-                                placeholder="Type your message here"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-outline-dark" title="submit" label="Submit feedback">Submit Feedback</button>
-                    </form>
-                </div>
+                <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
             </div>
+        </div>
+
+        <!-- Fallback contact form -->
+        <section class="mt-5">
+            <h2>Quick message</h2>
+            <p class="text-muted">If you can’t book a slot, send a short message below and I’ll reply accordingly</p>
+
+            <form id="contactForm" action="https://formspree.io/f/xpqzonja" method="POST" class="mt-3"
+                aria-label="Contact form">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="email2" class="form-label">Email</label>
+                        <input id="email2" name="email" type="email" class="form-control"
+                            placeholder="you@university.edu" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="4" class="form-control"
+                            placeholder="Briefly tell me what you need" required></textarea>
+                    </div>
+
+                    <div class="col-12 form-check">
+                        <input id="consent_contact" name="consent" type="checkbox" class="form-check-input" required>
+                        <label for="consent_contact" class="form-check-label">I consent to being contacted about
+                            coaching and related services.</label>
+                    </div>
+
+                    <!-- Redirect to thank-you after submit -->
+                    <input type="hidden" name="_next" value="https://abc24-004.github.io/fitny/thank-you.html">
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-dark btn-lg">Send message</button>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="mt-auto bg-white text-center text-muted py-3 border-top">
         <p class="mb-1">&copy; 2025 <a href="index.html" class="fitny-link">Fitny</a>. All rights reserved.</p>
-        <a href="contact.html" class="contact-link">Get in Touch</a>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Lightweight tracking hook (optional) -->
+    <script>
+        (function () {
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+            form.addEventListener('submit', function () {
+                try {
+                    // Replace with your analytics call if you have one
+                    // gtag('event','contact_form_submit',{event_category:'contact', event_label:'contact_form'});
+                    console.log('Contact form submitted');
+                } catch (e) {/* no-op */ }
+            });
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
